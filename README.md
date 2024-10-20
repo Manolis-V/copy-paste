@@ -6,7 +6,7 @@ This Python script copies a `.srt` file (specifically `2_English.srt`) from a de
 
 - Python 3.x
 - A folder containing `.mp4` files
-- A subfolder containing the `.srt` file to copy (named `2_English.srt`)
+- Subfolders containing the `.srt` files to copy (named `2_English.srt`) inside a Subs folder
 
 ## How It Works
 
@@ -21,19 +21,7 @@ For example:
 ## Installation
 1. Clone or download this script.
 2. Place the script in the same folder as the `.mp4` files you want to process.
-3. Ensure the `2_English.srt` file is placed in the specified subfolder.
-
-## Usage
-1. Open a terminal or command prompt.
-
-2. Navigate to the folder where your .mp4 files and this script are located.
-
-3. Run the script using the following command:
-
-```bash
-python3 script.py
-```
-4. The script will process all `.mp4` files in the current directory, copying and renaming the `2_English.srt` file accordingly.
+3. Ensure the `2_English.srt` files are placed in subfolders named after the `.mp4` file.
 
 ## Usage
 
@@ -52,7 +40,8 @@ movie1.mp4
 movie2.mp4
 movie3.mp4
 ```
-    - And you have the `2_English.srt` file located in a subfolder.
+- And you have the `2_English.srt` file located in `Subs/movie1`.
+
 - After running the script, you will get:
 ```bash
 movie1.mp4

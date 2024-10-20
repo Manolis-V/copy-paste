@@ -3,7 +3,7 @@ import shutil
 
 # Loop through the files in the current directory
 current_folder = os.getcwd()  # Gets the current directory
-
+srt_file_to_copy = "2_English.srt"
 for filename in os.listdir(current_folder):
     # Skip if it's a directory or if it's the script itself
     if os.path.isdir(filename) or filename == os.path.basename(__file__):
@@ -15,7 +15,7 @@ for filename in os.listdir(current_folder):
     subfolder_path = current_folder + "\Subs\\" + filename 
 
     # Copy a file from the subfolder
-    source_file = os.path.join(subfolder_path, "2_English.srt")
+    source_file = os.path.join(subfolder_path, srt_file_to_copy)
     if not os.path.exists(source_file):
         print(f"Source file {source_file} does not exist.")
         continue
